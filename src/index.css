@@ -1,4 +1,28 @@
-html, body {
+@font-face {
+  font-family: "disket-mono-regular-webfont";
+  src: url("./fonts/Disket-Mono-Regular/disket-mono-regular-webfont.woff2"), url("./fonts/Disket-Mono-Regular/disket-mono-regular-webfont.woff") format("truetype");
+}
+* {
   margin: 0;
   padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "disket-mono-regular-webfont";
 }
+
+body {
+  height: 100vh;
+  color: white;
+  background: linear-gradient(180deg, #fddf20 0%, #fcca14 74%, #fdc20e 100%);
+}
+
+.App {
+  width: 200vw;
+}
+
+h1 {
+  font-size: 2.8rem;
+  padding: 0 auto;
+}
+
+/*# sourceMappingURL=index.css.map */
