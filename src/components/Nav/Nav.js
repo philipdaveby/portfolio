@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './nav.css';
+import './nav.scss';
 
 const Nav = () => {
 
@@ -8,7 +8,7 @@ const Nav = () => {
     return (
         <nav className="nav" >
             <div className="nav__hamburger">
-                {clickedNav ? <div className="links">
+                {clickedNav ? <div className="links" id="slide">
                     <a href="/">PROJECTS</a>
                     <a href="/">HOME</a>
                     <a href="/">ABOUT</a>

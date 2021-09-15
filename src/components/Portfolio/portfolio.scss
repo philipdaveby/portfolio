@@ -1,0 +1,10 @@
+.portfolio {
+    grid-area: portfolio;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-areas: 
+    'portfolio-item-1 portfolio-item-1 . .'
+    '. . . .'
+    '. . . .';
+}

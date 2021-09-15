@@ -11,7 +11,7 @@
     text-align: center;
     box-sizing: border-box;
     font-family: 'disket-mono-regular-webfont';
-    color: #430078;
+    color: #212121;
 }
 body {
     height: 100vh;
@@ -26,12 +26,12 @@ a {
     width: 300vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template-columns: 0.1fr 1fr 0.8fr 1fr 0.1fr;
+    grid-template-rows: 0.05fr 0.95fr 0.05fr;
     grid-template-areas: 
-    'header header header'
-    'main main main'
-    'footer footer footer';
+    '. header header header .'
+    '. portfolio main about .'
+    'footer footer footer footer footer';
 }
 
 h1 {
