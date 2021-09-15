@@ -17,10 +17,16 @@ body {
 }
 
 .App {
-  width: 200vw;
+  width: 300vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
 
 h1 {
+  grid-area: header;
   font-size: 2.8rem;
   padding: 0 auto;
 }

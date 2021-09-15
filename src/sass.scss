@@ -19,14 +19,19 @@ body {
 }
 
 .App {
-    width: 200vw;
+    width: 300vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template-areas: 
+    'header header header'
+    'main main main'
+    'footer footer footer';
 }
 
 h1 {
+    grid-area: header;
     font-size: 2.8rem;
-    // word-break: break-all;
-    // width: 0.9em;
-    // height: 100vh;
-    // margin: 1rem 0;
     padding: 0 auto;
 }
