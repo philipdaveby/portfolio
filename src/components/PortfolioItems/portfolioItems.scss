@@ -21,6 +21,9 @@
 
 .portfolio-photos {
     grid-area: portfolio-photo-1;
+    width: 6rem;
+    object-fit: scale-down;
+    border-radius: 5px;
 }
 .portfolio-items__live {
     grid-area: portfolio-items__live;

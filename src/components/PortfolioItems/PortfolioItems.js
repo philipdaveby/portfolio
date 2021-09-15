@@ -11,8 +11,8 @@ const PortfolioItems = () => {
                 <p>This was the final project of the &lt;/salt&gt; bootcamp</p>
             </div>
             <img src={eatsy} alt="Eatsy project" className="portfolio-photos"/>
-            <a href="" className="portfolio-items__live">LIVE</a>
-            <a href="" className="portfolio-items__code">CODE</a>
+            <a href="/" className="portfolio-items__live">LIVE</a>
+            <a href="/" className="portfolio-items__code">CODE</a>
         </div>
     );
 }
