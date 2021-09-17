@@ -1,5 +1,6 @@
 import eatsy from '../images/eatsy.png';
 import workoutApp from '../images/workoutApp.png';
+import todo from '../images/todo.png';
 
 const portfolioItems = [{
     name: 'Eatsy',
@@ -22,6 +23,17 @@ const portfolioItems = [{
     liveLink: 'https://musing-mclean-d22dac.netlify.app',
     codeLink: 'https://github.com/philipdaveby/hack-day',
     gridArea: 'portfolio-item-2'
+},
+{
+    name: "Philip's ToDo!",
+    text: ['A todo application to help you remember your tasks and mark them as done',
+        'Built purely as a frontend application'
+        ],
+    imageLink: todo,
+    imageAlt: 'Todo app screenshot',
+    liveLink: 'https://zen-morse-86e998.netlify.app',
+    codeLink: 'https://github.com/philipdaveby/todo',
+    gridArea: 'portfolio-item-3 '
 }];
 
 export default portfolioItems;

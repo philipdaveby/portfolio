@@ -23,10 +23,10 @@ a {
   }
 
 .App {
-    width: 300vw;
+    width: 400vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 0.1fr 1fr 0.8fr 1fr 0.1fr;
+    grid-template-columns: 0.1fr 1fr 0.2fr 1fr 0.1fr;
     grid-template-rows: 0.05fr 0.95fr 0.05fr;
     grid-template-areas: 
     '. header header header .'
