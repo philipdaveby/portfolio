@@ -1,19 +1,17 @@
-@font-face {
-  font-family: "disket-mono-regular-webfont";
-  src: url("./fonts/Disket-Mono-Regular/disket-mono-regular-webfont.woff2"), url("./fonts/Disket-Mono-Regular/disket-mono-regular-webfont.woff") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   text-align: center;
   box-sizing: border-box;
-  font-family: "disket-mono-regular-webfont";
-  color: #212121;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: white;
+  background-color: pink;
 }
 
 body {
-  height: 100vh;
-  background: linear-gradient(180deg, #fddf20 0%, #fcca14 74%, #fdc20e 100%);
+  height: 100%;
 }
 
 a {
@@ -21,18 +19,11 @@ a {
 }
 
 .App {
-  width: 400vw;
+  width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 0.1fr 1fr 0.2fr 1fr 0.1fr;
   grid-template-rows: 0.05fr 0.95fr 0.05fr;
-  grid-template-areas: ". header header header ." ". portfolio main about ." "footer footer footer footer footer";
-}
-
-h1 {
-  grid-area: header;
-  font-size: 2.8rem;
-  padding: 0 auto;
+  grid-template-areas: "header" "main" "footer";
 }
 
 /*# sourceMappingURL=index.css.map */

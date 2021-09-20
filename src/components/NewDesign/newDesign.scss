@@ -1,11 +1,13 @@
 .new-design {
     width: 100vw;
     height: 100vh;
+    // background: linear-gradient(180deg, rgba(255,183,196,1) 0%, rgba(254,177,191,1) 85%, rgba(255,168,184,1) 100%);
     background-color: pink;
+    font-size: 1.5rem;
 }
 
 .eatsy__screenshot {
-    padding: 4rem;
+    padding: 4rem 0 0;
     margin: auto;
-    max-height: 600px;
+    max-height: 500px;
 }
