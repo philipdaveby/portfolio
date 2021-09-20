@@ -13,27 +13,52 @@
 }
 
 .home__projects {
-    padding: 3rem 1rem 0;
+    padding: 3rem 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.6fr 0.1fr 0.15fr;
     grid-template-areas: 
     '. eatsy-screenshot .'
     'arrow-left eatsy-screenshot arrow-right'
-    '. eatsy-screenshot .';
+    '. heading .'
+    '. links .';
     // justify-content: space-between;
-    font-size: 2rem;
 }
 
 .arrow-left {
     grid-area: arrow-left;
+    font-size: 4rem;
+    font-weight: 400;
 }
 
 .arrow-right {
     grid-area: arrow-right;
+    font-size: 4rem;
+    font-weight: 400;
 }
 
 .eatsy-screenshot {
-    max-height: 400px;
+    max-height: 350px;
     grid-area: eatsy-screenshot;
+}
+
+.home__heading {
+    font-size: 2rem;
+    grid-area: heading;
+}
+
+.home__links {
+    grid-area: links;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-around;
+
+    .home__github {
+        padding-bottom: 1px;
+        height: 30px;
+    }
+    
+    .home__website {
+        height: 30px;
+    }
 }
