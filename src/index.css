@@ -7,11 +7,11 @@
   font-family: "Poppins";
   font-weight: 600;
   color: white;
-  background-color: pink;
 }
 
 body {
   height: 100%;
+  background-color: pink;
 }
 
 a {
@@ -24,6 +24,10 @@ a {
   display: grid;
   grid-template-rows: 0.05fr 0.95fr 0.05fr;
   grid-template-areas: "header" "main" "footer";
+}
+
+li {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=index.css.map */

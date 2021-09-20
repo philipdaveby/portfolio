@@ -15,13 +15,13 @@
     font-family: "Poppins";
     font-weight: 600;
     color: white;
-    background-color: pink;
 }
 //     // font-family: 'disket-mono-regular-webfont';
 //     // color: #212121;
 // }
 body {
     height: 100%;
+    background-color: pink;
     // background: linear-gradient(180deg, rgba(253,223,32,1) 0%, rgba(252,202,20,1) 74%, rgba(253,194,14,1) 100%);
 }
 
@@ -38,6 +38,10 @@ a {
     'header'
     'main'
     'footer';
+}
+
+li {
+    list-style-type:none;
 }
 // .App {
     // width: 400vw;
