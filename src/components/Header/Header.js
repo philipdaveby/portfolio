@@ -1,14 +1,15 @@
 import React from 'react'
 import './header.scss'
-import { useLocation } from 'react-router'
+import { useLocation, useHistory } from 'react-router-dom'
 import signature from '../../images/signature-white-3.png'
 
 const Header = () => {
 
     const { pathname } = useLocation();
+    const history = useHistory();
 
     return (
-        <div className="header" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : '#FFCE00' }}>
+        <div className="header" onClick={() => history.push('/')} style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : '#FFCE00' }}>
             <img src={signature} alt="Logo" className="header__signature"/>
         </div>
     )
