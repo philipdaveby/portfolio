@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 // import Navigation from '../Navigation/Navigation'
 // import Nav from '../Nav/Nav'
 import './home.scss'
-import eatsy from '../../images/eatsy-plan.png'
+import eatsy from '../../images/eatsy.png'
 import github from '../../images/github.png'
 import website from '../../images/website.png'
-import signature from '../../images/signature-white.png'
+import signature from '../../images/signature-white-3.png'
+import information from '../../images/information.png'
 import PopUp from '../PopUp/PopUp'
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
                 <h2 className="home__heading">EATSY</h2>
                 <div className="home__links">
                     <a href="https://github.com/Wppvater/salted-paj-final-project" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub logo" className="home__github" /></a>
+                    <img src={information} alt="Information logo" className="home__info" onClick={() => openPopUp ? setOpenPopUp(false) : setOpenPopUp(true)} />
                     <a href="https://eatsy.tk" target="_blank" rel="noopener noreferrer"><img src={website} alt="Website logo" className="home__website" /></a>
                 </div>
             {openPopUp ? <PopUp setOpenPopUp={setOpenPopUp}/> : ''}
