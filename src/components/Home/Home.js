@@ -2,20 +2,21 @@ import React, { useState } from 'react'
 // import Navigation from '../Navigation/Navigation'
 // import Nav from '../Nav/Nav'
 import './home.scss'
+import { useLocation } from 'react-router'
+
 import eatsy from '../../images/eatsy-plan.png'
 import github from '../../images/github.png'
 import website from '../../images/website.png'
-import signature from '../../images/signature-white-3.png'
 import information from '../../images/information.png'
 import PopUp from '../PopUp/PopUp'
 
 const Home = () => {
 
     const [openPopUp, setOpenPopUp] = useState(false);
+    const { pathname } = useLocation();
 
     return (
-        <div className="home">
-            <img src={signature} alt="Logo" className="home__signature"/>
+        <div className="home" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : 'lightgreen' }}>
             <div className="home__projects">
                 <p className="arrow-left">&lt;</p>
                 <img src={eatsy} alt="Screenshot of Eatsy app" className="eatsy-screenshot" onClick={() => setOpenPopUp(true)}/>

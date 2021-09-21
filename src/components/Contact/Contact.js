@@ -3,7 +3,7 @@ import './contact.scss'
 
 const Contact = () => {
     return (
-        <div>
+        <div className="contact">
             <p>Say hi!</p>
             <a href="mailto:philip.daveby@gmail.com">Send an email</a>
             <p>+46 702 17 28 26</p>

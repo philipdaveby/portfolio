@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import './nav.scss';
+import { useLocation } from "react-router";
 
 const Nav = () => {
 
     const [clickedNav, setClickedNav] = useState(false);
+    const { pathname } = useLocation();
 
     return (
-        <nav className="nav" >
+        <nav className="nav" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : '#FFCE00' }}>
             <div className="nav__hamburger">
                 {clickedNav ? <div className="links" id="slide">
                     <a href="/">HOME</a>
