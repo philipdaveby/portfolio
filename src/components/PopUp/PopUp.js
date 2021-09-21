@@ -14,7 +14,7 @@ const PopUp = props => {
     return (
         <div className="pop-up" onClick={() => props.setOpenPopUp(false)}>
             {/* <h2 className="pop-up__header">EATSY</h2> */}
-            <p className="pop-up__text">Eatsy will schedule a meal plan for you, so you know exactly what to cook every meal, day and week. No more planning! This was the graduation project at &lt;/salt&gt;</p>
+            <p className="pop-up__text">Eatsy will schedule a meal plan for you, so you know exactly what to cook every meal, day and week. No more planning! This was the graduation project at &lt;/salt&gt;.</p>
             {/* <h3 className="pop-up__tech">Tech stack</h3> */}
             <ul className="pop-up__list">
                 <li className="pop-up__li"><img src={react} alt="react logo" className="pop-up__img"></img></li>

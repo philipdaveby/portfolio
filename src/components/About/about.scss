@@ -1,5 +1,29 @@
 .about {
-    grid-area: about;
+    grid-area: main;
     font-size: 0.6rem;
-    padding: 10rem 15rem 0;
+    padding: 1rem;
+
+    h1 {
+        padding-bottom: 1rem;
+    }
+    p {
+        padding: 0.5rem;
+        // background-color: rgb(238, 238, 238);
+        // border-radius: 1rem;
+    }
+
+    .about__tech-header {
+        padding: 0.5rem 0 0;
+    }
+}
+
+.about__tech {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+}
+
+.about__tech-icons {
+    max-height: 35px;
 }

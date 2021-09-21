@@ -9,10 +9,9 @@ const Nav = () => {
         <nav className="nav" >
             <div className="nav__hamburger">
                 {clickedNav ? <div className="links" id="slide">
-                    <a href="/">PROJECTS</a>
                     <a href="/">HOME</a>
-                    <a href="/">ABOUT</a>
-                    <a href="/">CONTACT</a>
+                    <a href="/about">ABOUT</a>
+                    <a href="/contact">CONTACT</a>
                 </div> : ''}
                 
                 <div className={clickedNav ? 'nav__animation change' : 'nav__animation'} onClick={() => clickedNav ? setClickedNav(false) : setClickedNav(true)} >
