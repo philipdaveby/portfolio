@@ -7,15 +7,22 @@
     grid-area: eatsy-screenshot;
 
     .pop-up__text, .pop-up__tech {
-        padding: 1rem 0 0 0;
+        padding: 0.8rem;
         color: black;
+        font-size: 1rem;
         font-weight: 400;
     }
 
     .pop-up__list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         padding-bottom: 1rem;
+    }
+
+    .pop-up__img {
+        max-width: 70px;
+        max-height: 35px;
     }
     
     .pop-up__li {
