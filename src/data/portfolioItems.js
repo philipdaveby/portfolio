@@ -9,8 +9,8 @@ const portfolioItems = [{
         ],
     imageLink: eatsy,
     imageAlt: 'Eatsy app screenshot',
-    liveLink: 'https://eatsy.tk',
-    codeLink: 'https://github.com/Wppvater/salted-paj-final-project',
+    webLink: 'https://eatsy.tk',
+    gitLink: 'https://github.com/Wppvater/salted-paj-final-project',
     gridArea: 'portfolio-item-1'
 },
 {
@@ -20,8 +20,8 @@ const portfolioItems = [{
         ],
     imageLink: workoutApp,
     imageAlt: 'Workout app screenshot',
-    liveLink: 'https://musing-mclean-d22dac.netlify.app',
-    codeLink: 'https://github.com/philipdaveby/hack-day',
+    webLink: 'https://musing-mclean-d22dac.netlify.app',
+    gitLink: 'https://github.com/philipdaveby/hack-day',
     gridArea: 'portfolio-item-2'
 },
 {
@@ -31,8 +31,8 @@ const portfolioItems = [{
         ],
     imageLink: todo,
     imageAlt: 'Todo app screenshot',
-    liveLink: 'https://zen-morse-86e998.netlify.app',
-    codeLink: 'https://github.com/philipdaveby/todo',
+    webLink: 'https://zen-morse-86e998.netlify.app',
+    gitLink: 'https://github.com/philipdaveby/todo',
     gridArea: 'portfolio-item-3 '
 }];
 
