@@ -1,7 +1,7 @@
 .pop-up {
     // width: 120%;
-    max-height: 350px;
-    max-width: 200px;
+    height: 55vh;
+    max-width: 300px;
     border-radius: 15px;
     margin: 0 auto;
     background-color: white;
@@ -9,7 +9,7 @@
     cursor: pointer;
 
     .pop-up__text {
-        padding: 1rem 1rem 2rem;
+        padding: 1rem 0.7rem;
         color: black;
         font-size: 12px;
         font-weight: 400;
@@ -19,7 +19,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        padding-bottom: 1rem;
+        // padding-bottom: 1rem;
     }
 
     .pop-up__img {
@@ -30,5 +30,14 @@
     .pop-up__li {
         color: black;
         font-weight: 400;
+    }
+}
+
+@media (min-width: 600px) {
+    .pop-up {
+        .pop-up__text {
+            font-size: 18px;
+            padding-bottom: 3rem;
+        }
     }
 }

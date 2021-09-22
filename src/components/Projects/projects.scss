@@ -4,6 +4,12 @@
 
 .projects__screenshot {
     cursor: pointer;
-    max-height: 350px;
+    max-height: 55vh;
     margin: 0 auto;
 }
+
+// @media (min-height: 650px) {
+//     .projects__screenshot {
+//         height: 100vh;
+//     }
+// }

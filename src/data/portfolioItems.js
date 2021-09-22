@@ -1,5 +1,5 @@
 import eatsy from '../images/eatsy-plan.png';
-import workoutApp from '../images/workoutApp.png';
+import workouts from '../images/workoutApp.png';
 import todo from '../images/todo.png';
 import react from '../images/logo/react.png'
 import express from '../images/logo/express.png'
@@ -24,16 +24,16 @@ const portfolioItems = [{
     gitLink: 'https://github.com/Wppvater/salted-paj-final-project',
     gridArea: 'portfolio-item-1',
     id: 1,
-    info: "Eatsy will schedule a meal plan for you, so you know exactly what to cook every meal, day and week. No more planning! This was the graduation project at &lt;/salt&gt;.",
+    info: "Eatsy will schedule a meal plan for you, so you know exactly what to cook every meal, day and week. No more planning! This was the graduation project at </salt>.",
     techStack: [react, gatsby, sass, apollo, graphql, node, express, docker, heroku]
 },
 {
-    name: 'Workout app',
-    text: ['Workout app was initally created during a hackday at </salt>. ',
+    name: 'Workouts',
+    text: ['Workouts was initally created during a hackday at </salt>. ',
             'Create you own workouts, reorder them as you like and check them off'
         ],
-    imageLink: workoutApp,
-    imageAlt: 'Workout app screenshot',
+    imageLink: workouts,
+    imageAlt: 'Workouts screenshot',
     webLink: 'https://musing-mclean-d22dac.netlify.app',
     gitLink: 'https://github.com/philipdaveby/hack-day',
     gridArea: 'portfolio-item-2',
@@ -42,7 +42,7 @@ const portfolioItems = [{
     techStack: [react, sass, netlify, mongoDB, express, node, docker, heroku]
 },
 {
-    name: "Philip's ToDo!",
+    name: "ToDo",
     text: ['A todo application to help you remember your tasks and mark them as done',
         'Built purely as a frontend application'
         ],

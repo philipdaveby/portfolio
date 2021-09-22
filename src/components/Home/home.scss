@@ -2,15 +2,18 @@
 
 .home {
     background: pink;
+    // max-height: 55vh;
     // height: 100%;
     // width: 100vw;
 }
 
 .home__projects {
+    max-width: 600px;
+    margin: 0 auto;
     padding-top: 1rem;
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
-    grid-template-rows: 0.4fr 0.6fr 0.1fr 0.15fr;
+    grid-template-rows: 0.3fr 0.6fr 0.05fr 0.05fr;
     grid-template-areas: 
     '. screenshot .'
     'arrow-left screenshot arrow-right'
