@@ -15,6 +15,8 @@ const Home = () => {
     const { pathname } = useLocation();
 
     const nextProject = () => {
+        setOpenPopUp(false);
+
         if (currentProject === portfolioItems.length) {
             setCurrentProject(1);
             return;
@@ -22,6 +24,8 @@ const Home = () => {
         setCurrentProject(currentProject+1);
     }
     const prevProject = () => {
+        setOpenPopUp(false);
+
         if (currentProject === 1) {
             setCurrentProject(portfolioItems.length);
             return;
@@ -40,7 +44,13 @@ const Home = () => {
                     }
                     return '';
                 })}
-            {openPopUp ? <PopUp setOpenPopUp={setOpenPopUp}/> : ''}
+            {portfolioItems.map(project => {
+                // console.log(project)
+                if (project.id === currentProject) {
+                    return openPopUp ? <PopUp project={project} setOpenPopUp={setOpenPopUp}/> : '';
+                }
+                return '';
+            })}
             </div>
         </div>
     )
