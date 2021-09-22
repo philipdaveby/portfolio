@@ -38,16 +38,16 @@ const Home = () => {
             <div className="home__projects">
                 <p className="arrow-left" onClick={prevProject}>&lt;</p>
                 <p className="arrow-right" onClick={nextProject}>&gt;</p>
-                {portfolioItems.map(project => {
+                {portfolioItems.map((project, index) => {
                     if (currentProject === project.id) {
-                        return <Projects setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} project={project} />
+                        return <Projects key={index} setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} project={project} />
                     }
                     return '';
                 })}
-            {portfolioItems.map(project => {
+            {portfolioItems.map((project, index) => {
                 // console.log(project)
                 if (project.id === currentProject) {
-                    return openPopUp ? <PopUp project={project} setOpenPopUp={setOpenPopUp}/> : '';
+                    return openPopUp ? <PopUp key={index} project={project} setOpenPopUp={setOpenPopUp}/> : '';
                 }
                 return '';
             })}

@@ -1,4 +1,10 @@
 import React, { useState } from 'react'
+import './contactForm.scss'
+import emailjs from 'emailjs-com';
+import linkedIn from '../../images/logo/linkedin.png'
+import github from '../../images/logo/github-large.png'
+
+// init('user_zVG8iUObb40WPNXn94FkR');
 
 const ContactForm = () => {
 
@@ -8,13 +14,25 @@ const ContactForm = () => {
     const [emailSent, setEmailSent] = useState(false);
 
     const isValidEmail = email => {
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return regex.test(String(email).toLowerCase());
     };
 
     const submit = () => {
-        if (name && email && message) {
-           // TODO - send mail
+        if (name && email && message && isValidEmail) {
+
+            const serviceId = 'service_ho0h97m';
+            const templateId = 'template_bk3zewh';
+            const userId = 'user_zVG8iUObb40WPNXn94FkR';
+            const templateParams = {
+                name,
+                email,
+                message
+            };
+
+            emailjs.send(serviceId, templateId, templateParams, userId)
+                .then(response => console.log(response))
+                .then(error => console.log(error));
     
             setName('');
             setEmail('');
@@ -26,13 +44,16 @@ const ContactForm = () => {
     }
 
     return (
-        <div id="contact-form">
-            <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
-            <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
-            <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-            <button onClick={submit}>Send Message</button>
-            <span className={emailSent ? 'visible' : null}>Thank you for your message, I'll be in touch in no time!</span>
-        );
+        <div className="contact__form">
+            <input className="contact__name" type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
+            <input className="contact__email" type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
+            <textarea className="contact__message" placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+            <button className="contact__submit" onClick={submit}>Send Message</button>
+            <div className="contact__links">
+                <a href="https://github.com/philipdaveby"><img src={github} alt="Github logo" className="contact__github" /></a>
+                <a href="https://www.linkedin.com/in/philipdaveby/"><img src={linkedIn} alt="LinkedIn logo" className="contact__linkedin" /></a>
+            </div>
+            {emailSent ? <div className="contact__confirmation">I'm glad you reached out, I'll get back to you as quick as possible!</div> : ''}
         </div>
     );
 };

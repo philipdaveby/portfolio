@@ -53,7 +53,7 @@ const portfolioItems = [{
     gridArea: 'portfolio-item-3 ',
     id: 3,
     info: "Philip's ToDo app let's you write done things and check them off once done, so you won't forget what to do. This application was built during the bootcamp purely as frontend.",
-    techStack: [react, sass, netlify, node]
+    techStack: [react, sass, netlify]
 }
 ];
 

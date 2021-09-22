@@ -1,0 +1,50 @@
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    
+    .contact__name, .contact__email {
+        height: 30px;
+    }
+    
+    .contact__message {
+        height: 80px;
+    }
+    
+    .contact__submit {
+        color: black;
+        margin: 0.5rem 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        background-color: white;
+        border-style: none;
+        cursor: pointer;
+    }
+    
+    input, .contact__message {
+        border-radius: 5px;
+        margin: 0.5rem 2rem;
+        box-shadow: none;
+        color: black;
+        border-style: none;
+    }
+
+    .contact__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: links;
+        
+    }    
+}
+
+.contact__github {
+    margin: auto;
+    padding-right: 1rem;
+    width: 100px;
+}
+
+.contact__linkedin {
+    margin: auto;
+    padding-left: 1rem;
+    width: 100px;
+}

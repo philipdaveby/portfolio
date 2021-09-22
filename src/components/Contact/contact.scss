@@ -1,57 +1,8 @@
 .contact {
     background-color: #FFCE00;
     grid-area: main;
-
-    .contact__text {
-        margin-top: 5rem;
-    }
-    
-    input, .contact__message {
-        border-radius: 5px;
-        margin: 0.5rem 2rem;
-        box-shadow: none;
-        color: black;
-        border-style: none;
-    }
 }
 
-.contact__form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact__title, .contact__email {
-    height: 30px;
-}
-
-.contact__message {
-    height: 80px;
-}
-
-.contact__submit {
-    color: black;
-    margin: 0.5rem 2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    background-color: white;
-    border-style: none;
-    cursor: pointer;
-}
-
-.contact__links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact__github {
-    margin: auto;
-    padding-right: 1rem;
-    width: 100px;
-}
-
-.contact__linkedin {
-    margin: auto;
-    padding-left: 1rem;
-    width: 100px;
+.contact__text {
+    margin-top: 5rem;
 }
