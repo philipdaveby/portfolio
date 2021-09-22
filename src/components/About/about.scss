@@ -11,8 +11,6 @@
     }
     p {
         padding: 0.5rem;
-        // background-color: rgb(238, 238, 238);
-        // border-radius: 1rem;
     }
 
     .about__tech-header {
@@ -31,17 +29,10 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     margin: 0.2rem;
-    // flex-direction: column;
-    // align-items: baseline;
-    // align-self: center;
 }
 
 .about__tech-icons {
     margin: auto;
     max-height: 40px;
     max-width: 50px;
-}
-
-.about__tech-name {
-    // margin: auto;
 }

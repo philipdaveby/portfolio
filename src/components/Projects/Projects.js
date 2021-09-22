@@ -6,8 +6,8 @@ import information from '../../images/information.png'
 
 const Projects = ({ openPopUp, setOpenPopUp, project}) => {
     return (
-        <div>
-            <img src={project.imageLink} alt={project.imageAlt} className="projects-screenshot" onClick={() => setOpenPopUp(true)}/>
+        <div className="projects">
+            <img src={project.imageLink} alt={project.imageAlt} className="projects__screenshot" onClick={() => setOpenPopUp(true)}/>
             <h2 className="home__heading">{project.name}</h2>
                 <div className="home__links">
                     <a href={project.gitLink} target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub logo" className="home__github" /></a>

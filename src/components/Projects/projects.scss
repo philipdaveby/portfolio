@@ -1,9 +1,8 @@
 .projects {
-
+    grid-area: screenshot;
 }
 
-.projects-screenshot {
+.projects__screenshot {
     max-height: 350px;
-    grid-area: eatsy-screenshot;
     margin: 0 auto;
 }

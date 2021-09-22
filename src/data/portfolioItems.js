@@ -11,7 +11,8 @@ const portfolioItems = [{
     imageAlt: 'Eatsy app screenshot',
     webLink: 'https://eatsy.tk',
     gitLink: 'https://github.com/Wppvater/salted-paj-final-project',
-    gridArea: 'portfolio-item-1'
+    gridArea: 'portfolio-item-1',
+    id: 1
 },
 {
     name: 'Workout app',
@@ -22,7 +23,8 @@ const portfolioItems = [{
     imageAlt: 'Workout app screenshot',
     webLink: 'https://musing-mclean-d22dac.netlify.app',
     gitLink: 'https://github.com/philipdaveby/hack-day',
-    gridArea: 'portfolio-item-2'
+    gridArea: 'portfolio-item-2',
+    id: 2
 },
 {
     name: "Philip's ToDo!",
@@ -33,7 +35,9 @@ const portfolioItems = [{
     imageAlt: 'Todo app screenshot',
     webLink: 'https://zen-morse-86e998.netlify.app',
     gitLink: 'https://github.com/philipdaveby/todo',
-    gridArea: 'portfolio-item-3 '
-}];
+    gridArea: 'portfolio-item-3 ',
+    id: 3
+}
+];
 
 export default portfolioItems;

@@ -11,15 +11,34 @@ import portfolioItems from "../../data/portfolioItems";
 const Home = () => {
 
     const [openPopUp, setOpenPopUp] = useState(false);
+    const [currentProject, setCurrentProject] = useState(1);
     const { pathname } = useLocation();
+
+    const nextProject = () => {
+        if (currentProject === portfolioItems.length) {
+            setCurrentProject(1);
+            return;
+        }
+        setCurrentProject(currentProject+1);
+    }
+    const prevProject = () => {
+        if (currentProject === 1) {
+            setCurrentProject(portfolioItems.length);
+            return;
+        }
+        setCurrentProject(currentProject-1);
+    }
 
     return (
         <div className="home" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : 'lightgreen' }}>
             <div className="home__projects">
-                <p className="arrow-left">&lt;</p>
-                <p className="arrow-right">&gt;</p>
+                <p className="arrow-left" onClick={prevProject}>&lt;</p>
+                <p className="arrow-right" onClick={nextProject}>&gt;</p>
                 {portfolioItems.map(project => {
-                    return <Projects setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} project={project} />
+                    if (currentProject === project.id) {
+                        return <Projects setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} project={project} />
+                    }
+                    return '';
                 })}
             {openPopUp ? <PopUp setOpenPopUp={setOpenPopUp}/> : ''}
             </div>

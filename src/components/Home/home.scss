@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
 .home {
-    // background: pink;
+    background: pink;
     // height: 100%;
     // width: 100vw;
 }
@@ -12,8 +12,8 @@
     grid-template-columns: 0.3fr 1fr 0.3fr;
     grid-template-rows: 0.4fr 0.6fr 0.1fr 0.15fr;
     grid-template-areas: 
-    '. eatsy-screenshot .'
-    'arrow-left eatsy-screenshot arrow-right'
+    '. screenshot .'
+    'arrow-left screenshot arrow-right'
     '. heading .'
     '. links .';
     // justify-content: space-between;
@@ -23,12 +23,14 @@
     grid-area: arrow-left;
     font-size: 4rem;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .arrow-right {
     grid-area: arrow-right;
     font-size: 4rem;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .home__heading {
