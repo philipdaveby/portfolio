@@ -35,7 +35,7 @@ const About = () => {
             <h2 className="about__tech-header">Frontend</h2>
             <ul className="about__tech">
                 <li className="about__tech-li">
-                    <img className="about__tech-icons" src={javascript} alt="" />
+                    <img className="about__tech-icons" src={javascript} alt="Javascript logo" />
                 <p className="about__tech-name">Javascript</p>
                 </li>
                 <li className="about__tech-li"><img className="about__tech-icons" src={react} alt="React logo"/>

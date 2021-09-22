@@ -8,7 +8,7 @@ const Nav = () => {
     const { pathname } = useLocation();
 
     return (
-        <nav className="nav" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : '#FFCE00' }}>
+        <nav className="nav" style={{ backgroundColor: pathname === '/about' ? 'black' : 'pink'}}>
             <div className="nav__hamburger">
                 {clickedNav ? <div className="links" id="slide">
                     <a href="/">HOME</a>

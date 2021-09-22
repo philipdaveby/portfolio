@@ -9,7 +9,7 @@ const Header = () => {
     const history = useHistory();
 
     return (
-        <div className="header" onClick={() => history.push('/')} style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : '#FFCE00' }}>
+        <div className="header" onClick={() => history.push('/')} style={{ backgroundColor: pathname === '/about' ? 'black' : 'pink'}}>
             <img src={signature} alt="Logo" className="header__signature"/>
         </div>
     )

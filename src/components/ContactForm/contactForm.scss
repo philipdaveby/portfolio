@@ -1,6 +1,8 @@
 .contact__form {
     display: flex;
     flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
     
     .contact__name, .contact__email {
         height: 30px;

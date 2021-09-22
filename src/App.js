@@ -2,6 +2,7 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Nav from './components/Nav/Nav';
+import DesktopNav from './components/DesktopNav/DesktopNav';
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
 import Header from './components/Header/Header';
@@ -22,7 +23,8 @@ const App = () => {
             <Home />
           </Route>
         </Switch>
-            <Nav />
+          <DesktopNav />
+          <Nav />
       </div>
   );
 }
