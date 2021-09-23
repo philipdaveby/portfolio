@@ -45,7 +45,6 @@ const Home = () => {
                     return '';
                 })}
             {portfolioItems.map((project, index) => {
-                // console.log(project)
                 if (project.id === currentProject) {
                     return openPopUp ? <PopUp key={index} project={project} setOpenPopUp={setOpenPopUp}/> : '';
                 }

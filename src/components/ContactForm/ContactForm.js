@@ -21,9 +21,9 @@ const ContactForm = () => {
     const submit = () => {
         if (name && email && message && isValidEmail) {
 
-            const serviceId = 'service_ho0h97m';
-            const templateId = 'template_bk3zewh';
-            const userId = 'user_zVG8iUObb40WPNXn94FkR';
+            const serviceId = process.env.REACT_APP_SERVICE_ID;
+            const templateId = process.env.REACT_APP_TEMPLATE_ID;
+            const userId = process.env.REACT_APP_USER_ID;
             const templateParams = {
                 name,
                 email,

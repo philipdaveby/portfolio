@@ -10,7 +10,7 @@ import Header from './components/Header/Header';
 
 const App = () => {
   return (
-      <div className="App">
+      <main className="App">
         <Header />
         <Switch>
           <Route path="/about">
@@ -25,7 +25,7 @@ const App = () => {
         </Switch>
           <DesktopNav />
           <Nav />
-      </div>
+      </main>
   );
 }
 

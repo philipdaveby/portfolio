@@ -3,8 +3,21 @@ import './projects.scss'
 import github from '../../images/github.png'
 import website from '../../images/website.png'
 import information from '../../images/information.png'
+import useImage from 'react-use-image';
 
 const Projects = ({ openPopUp, setOpenPopUp, project}) => {
+
+
+    const LoadImage = src => {   
+    const { loaded } = useImage(src);
+
+    console.log(src);
+    if (!loaded) return null;
+
+
+    return <img src={src} alt={project.imageAlt} className={openPopUp ? "hide projects__screenshot" : "projects__screenshot"} onClick={() => setOpenPopUp(true)} />;
+    };
+
     return (
         <div className="projects">
             {/* <div class="c-tilt">   
@@ -14,7 +27,8 @@ const Projects = ({ openPopUp, setOpenPopUp, project}) => {
                 <div class="c-ryanyu-name-shadow">Philip Daveby</div>   
                 <div class="c-ryanyu-name">Philip Daveby</div> 
             </div> */}
-            <img src={project.imageLink} alt={project.imageAlt} className={openPopUp ? "hide projects__screenshot" : "projects__screenshot"} onClick={() => setOpenPopUp(true)}/>
+            {LoadImage(project.imageLink)}
+            {/* <img src={project.imageLink} alt={project.imageAlt} className={openPopUp ? "hide projects__screenshot" : "projects__screenshot"} onClick={() => setOpenPopUp(true)}/> */}
             <h2 className="projects__heading">{project.name.toUpperCase()}</h2>
                 <div className="projects__links">
                     <a href={project.gitLink} target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub logo" className="projects__github" /></a>
