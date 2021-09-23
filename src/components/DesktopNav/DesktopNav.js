@@ -7,9 +7,9 @@ const DesktopNav = () => {
 
     return (
         <nav className="desktop-nav" style={{ backgroundColor: pathname === '/about' ? 'black' : 'pink'}}>
-            <a href="/">HOME</a>
-            <a href="/about">ABOUT</a>
-            <a href="/contact">CONTACT</a>
+            <a href="/" style={{ textDecoration: pathname === '/' ? 'underline' : null}}>HOME</a>
+            <a href="/about" style={{ textDecoration: pathname === '/about' ? 'underline' : null}}>ABOUT</a>
+            <a href="/contact" style={{ textDecoration: pathname === '/contact' ? 'underline' : null}}>CONTACT</a>
         </nav>
     )
 }

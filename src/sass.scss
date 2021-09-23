@@ -17,9 +17,21 @@
     color: white;
 }
 
-body, html {
-    height: 100%;
-}
+html {
+    height: -webkit-fill-available;
+    }
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    height: -webkit-fill-available;
+    }
+
+main {
+    flex: 1;
+    }
 
 a {
     text-decoration: none;

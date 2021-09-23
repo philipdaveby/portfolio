@@ -5,7 +5,11 @@
     a {
         font-size: 1.5rem;
         padding: 0 0.5rem;
-    }
+        
+      }
+      a:hover {
+      text-decoration: underline dotted;
+      }
 }
 
 @media screen and (max-width: 599px) {
