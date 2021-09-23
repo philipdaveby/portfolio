@@ -4,16 +4,59 @@
 
 .projects__screenshot {
     cursor: pointer;
-    // max-height: 48vh;
+    max-height: 50vh;
     max-width: 70vw;
     margin: 0 auto;
 }
 
+.projects__heading {
+    font-size: 2rem;
+    grid-area: heading;
+    padding: 0.2rem;
+}
+
+.projects__links {
+    grid-area: links;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-around;
+
+    .projects__github {
+        padding-bottom: 1px;
+        height: 30px;
+    }
+    
+    .projects__info {
+        height: 30px;
+        cursor: pointer;
+    }
+    
+    .projects__website {
+        height: 30px;
+    }
+}
+
+
 // @media (min-height: 650px) {
 //     .projects__screenshot {
-//         height: 100vh;
+//         // height: 100vh;
+//         // max-width: 400px;
+//         max-height: 55vh;
 //     }
 // }
+
+@media (min-height: 700px) {
+    .projects__screenshot {
+        // height: 100vh;
+        // max-width: 400px;
+        max-height: 55vh;
+    }
+
+    .projects__heading {
+        padding: 0.5rem;
+        font-size: 2.5rem;
+    }
+}
 
 /*
 body {   
