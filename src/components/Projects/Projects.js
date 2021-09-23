@@ -3,31 +3,16 @@ import './projects.scss'
 import github from '../../images/github.png'
 import website from '../../images/website.png'
 import information from '../../images/information.png'
-import useImage from 'react-use-image';
+import LoadImage from '../LoadImage/LoadImage'
 
 const Projects = ({ openPopUp, setOpenPopUp, project}) => {
 
 
-    const LoadImage = src => {   
-    const { loaded } = useImage(src);
-
-    console.log(src);
-    if (!loaded) return null;
-
-
-    return <img src={src} alt={project.imageAlt} className={openPopUp ? "hide projects__screenshot" : "projects__screenshot"} onClick={() => setOpenPopUp(true)} />;
-    };
+    
 
     return (
         <div className="projects">
-            {/* <div class="c-tilt">   
-                <a class="c-ryanyu" target="_blank">     
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/204808/ryan-logo.svg" alt="Ryan Yu" />   
-                </a>   
-                <div class="c-ryanyu-name-shadow">Philip Daveby</div>   
-                <div class="c-ryanyu-name">Philip Daveby</div> 
-            </div> */}
-            {LoadImage(project.imageLink)}
+            <LoadImage project={project} openPopUp={openPopUp} setOpenPopUp={setOpenPopUp}/>
             {/* <img src={project.imageLink} alt={project.imageAlt} className={openPopUp ? "hide projects__screenshot" : "projects__screenshot"} onClick={() => setOpenPopUp(true)}/> */}
             <h2 className="projects__heading">{project.name.toUpperCase()}</h2>
                 <div className="projects__links">

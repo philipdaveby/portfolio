@@ -4,8 +4,6 @@ import emailjs from 'emailjs-com';
 import linkedIn from '../../images/logo/linkedin.png'
 import github from '../../images/logo/github-large.png'
 
-// init('user_zVG8iUObb40WPNXn94FkR');
-
 const ContactForm = () => {
 
     const [name, setName] = useState('');
