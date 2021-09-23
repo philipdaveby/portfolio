@@ -6,8 +6,8 @@
     overflow:hidden;
 
     h1 {
-        font-size: 2rem;
-        padding-bottom: 1rem;
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
     }
     p {
         padding: 0.5rem;
@@ -33,12 +33,36 @@
 
 .about__tech-icons {
     margin: auto;
-    max-height: 40px;
-    max-width: 50px;
+    max-height: 32px;
+    max-width: 32px;
+}
+
+@media screen and (min-height: 700px) {
+    .about {
+
+        h2 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 12px;
+            padding-bottom: 1rem;
+        }
+
+        .about__tech-icons {
+            max-height: 40px;
+            max-width: 40px;
+        }
+
+    }
 }
 
 @media screen and (min-width: 700px) {
     .about {
+
+        h1 {
+            font-size: 2rem;
+        }
         
         h2 {
             font-size: 18px;
@@ -57,7 +81,7 @@
 
         .about__tech-icons {
             max-height: 60px;
-            max-width: 70px;
+            max-width: 60px;
         }
 
     }
