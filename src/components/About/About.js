@@ -9,7 +9,6 @@ import webpack from '../../images/logo/webpack.png'
 import docker from '../../images/logo/docker.png'
 import heroku from '../../images/logo/heroku.webp'
 import graphql from '../../images/logo/graphql.png'
-// import apollo from '../../images/logo/apollo.png'
 import netlify from '../../images/logo/netlify.webp'
 import javascript from '../../images/logo/javascript.webp'
 import redux from '../../images/logo/redux.webp'
@@ -31,13 +30,11 @@ const About = () => {
         <div className="about">
             <h1>Philip Daveby</h1>
             <h2>Fullstack Javascript Developer</h2>
-            <p>Former professional freelance musician in Stockholm. Driven by learning and passionate about frontend, tech & music. I love solving problems, leading teams and seeing the bigger picture.</p>
+            <p className="about__text">Former professional freelance musician in Stockholm. Driven by learning and passionate about frontend, tech & music. I love solving problems, leading teams and seeing the bigger picture.</p>
             <h2 className="about__tech-header">Frontend</h2>
             <ul className="about__tech">
-                <li className="about__tech-li">
-                    <img className="about__tech-icons" src={javascript} alt="Javascript logo" />
-                <p className="about__tech-name">Javascript</p>
-                </li>
+                <li className="about__tech-li"><img className="about__tech-icons" src={javascript} alt="Javascript logo" />
+                <p className="about__tech-name">Javascript</p></li>
                 <li className="about__tech-li"><img className="about__tech-icons" src={react} alt="React logo"/>
                 <p className="about__tech-name">React</p></li>
                 <li className="about__tech-li"><img className="about__tech-icons" src={html} alt="Html  logo"/>

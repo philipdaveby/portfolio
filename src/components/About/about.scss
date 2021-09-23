@@ -44,7 +44,7 @@
             font-size: 16px;
         }
 
-        p {
+        .about__text {
             font-size: 12px;
             padding-bottom: 1rem;
         }
@@ -68,20 +68,20 @@
             font-size: 18px;
         }
         
-        p {
+        .about__text {
             font-size: 12px;
             max-width: 700px;
             margin: 0 auto;
         }
         
-        ul {
+        .about__tech {
             max-width: 700px;
             margin: 0 auto;
         }
 
         .about__tech-icons {
-            max-height: 60px;
-            max-width: 60px;
+            max-height: 50px;
+            max-width: 50px;
         }
 
     }

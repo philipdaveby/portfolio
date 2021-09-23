@@ -1,27 +1,20 @@
 .nav {
   grid-area: footer;
-  // width: 100vw;
   display: flex;
   justify-content: flex-end;
-  // padding-bottom: 5px;
-  // align-items: flex-start;
-  // height: 400px;
 }
 
 .nav__hamburger {
+  position: sticky;
   display: flex;
   cursor: pointer;
-  position: sticky;
   right: 1rem;
   bottom: 0.5rem;
   justify-self: flex-start;
   align-self: flex-end;
-  // width: 100vw;
 }
 
 .links {
-  // display: flex;
-  // align-items: center;
   margin-top: 0.4rem;
 }
 
