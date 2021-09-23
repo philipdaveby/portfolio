@@ -11,6 +11,7 @@ const PopUp = props => {
                     return <li key={index} className="pop-up__li"><img src={logo} alt="logo" className="pop-up__img"></img></li>
                 })}
             </ul>
+            <button className="pop-up__close" onClick={() => props.setOpenPopUp(false)}>Close</button>
         </div>
     )
 }

@@ -14,7 +14,7 @@ const Projects = ({ openPopUp, setOpenPopUp, project}) => {
                 <div class="c-ryanyu-name-shadow">Philip Daveby</div>   
                 <div class="c-ryanyu-name">Philip Daveby</div> 
             </div> */}
-            <img src={project.imageLink} alt={project.imageAlt} className="projects__screenshot" onClick={() => setOpenPopUp(true)}/>
+            <img src={project.imageLink} alt={project.imageAlt} className={openPopUp ? "hide projects__screenshot" : "projects__screenshot"} onClick={() => setOpenPopUp(true)}/>
             <h2 className="projects__heading">{project.name.toUpperCase()}</h2>
                 <div className="projects__links">
                     <a href={project.gitLink} target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub logo" className="projects__github" /></a>
