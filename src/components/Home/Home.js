@@ -32,10 +32,10 @@ const Home = () => {
       });
     SwipeReact.config({
         left: () => {
-            prevProject();
+            nextProject();
           },
           right: () => {
-            nextProject();
+            prevProject();
           }
     });
 
