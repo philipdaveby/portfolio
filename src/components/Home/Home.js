@@ -60,7 +60,6 @@ const Home = () => {
 
     return (
         <div ref={arrowKeys} {...SwipeReact.events} {...ArrowKeysReact.events} tabIndex="1" className="home" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : 'lightgreen' }}>
-        {/* {focus()} */}
             <p className="arrow-left" onClick={prevProject}>&lt;</p>
             <p className="arrow-right" onClick={nextProject}>&gt;</p>
             <div className="home__projects">

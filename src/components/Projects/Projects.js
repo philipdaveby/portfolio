@@ -1,13 +1,10 @@
 import React from 'react'
 import './projects.scss'
-import github from '../../images/github.png'
-import website from '../../images/website.png'
-import information from '../../images/information.png'
+import github from '../../images/github-white.png'
+import website from '../../images/website-white.jpg'
+import information from '../../images/info-white.png'
 
 const Projects = ({ openPopUp, setOpenPopUp, project}) => {
-
-
-    
 
     return (
         <div className="projects">

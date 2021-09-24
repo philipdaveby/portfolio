@@ -39,12 +39,14 @@ const ContactForm = () => {
             emailjs.send(serviceId, templateId, templateParams, userId)
                 .then(response => console.log(response))
                 .then(error => console.log(error));
-    
+            
+            setNotFilled(false);
             setName('');
             setEmail('');
             setMessage('');
             setEmailSent(true);
         } else {
+            setIncorrectEmail(false);
             setNotFilled(true);
         }
     }
@@ -53,7 +55,7 @@ const ContactForm = () => {
         <div className="contact__form">
             <input className="contact__name" type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
             <input className="contact__email" type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
-            <textarea className="contact__message" placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+            <textarea className="contact__textarea" placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
             <button className="contact__submit" onClick={submit}>Send Message</button>
             <div className="contact__links">
                 <a href="https://github.com/philipdaveby"><img src={github} alt="Github logo" className="contact__github" /></a>

@@ -12,6 +12,7 @@
     border-radius: 15px;
     margin: 0 auto;
     background-color: white;
+    // background-color: rgba(0, 0, 0, 0.2);
     grid-area: pop-up;
     cursor: pointer;
     overflow: scroll;
@@ -48,9 +49,10 @@
     }
 }
 
-@media (min-height: 850px) {
+@media (min-height: 810px) {
     .pop-up {
-        max-height: 40vh;
+        // max-height: 40vh;
+        max-height: 54%;
     }
 }
 
