@@ -10,6 +10,8 @@ const ContactForm = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [emailSent, setEmailSent] = useState(false);
+    const [incorrectEmail, setIncorrectEmail] = useState(false);
+    const [notFilled, setNotFilled] = useState(false);
 
     const isValidEmail = email => {
         const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -17,7 +19,13 @@ const ContactForm = () => {
     };
 
     const submit = () => {
-        if (name && email && message && isValidEmail) {
+
+        if (!isValidEmail(email)) {
+            setIncorrectEmail(true)
+            return;
+        }
+
+        if (name && email && message) {
 
             const serviceId = process.env.REACT_APP_SERVICE_ID;
             const templateId = process.env.REACT_APP_TEMPLATE_ID;
@@ -37,7 +45,7 @@ const ContactForm = () => {
             setMessage('');
             setEmailSent(true);
         } else {
-            alert('Please fill in all fields.');
+            setNotFilled(true);
         }
     }
 
@@ -51,7 +59,9 @@ const ContactForm = () => {
                 <a href="https://github.com/philipdaveby"><img src={github} alt="Github logo" className="contact__github" /></a>
                 <a href="https://www.linkedin.com/in/philipdaveby/"><img src={linkedIn} alt="LinkedIn logo" className="contact__linkedin" /></a>
             </div>
-            {emailSent ? <div className="contact__confirmation">I'm glad you reached out, I'll get back to you as quick as possible!</div> : ''}
+            {emailSent ? <div className="contact__message">I'm glad you reached out, I'll get back to you as quick as possible!</div> : ''}
+            {incorrectEmail ? <div className="contact__message">Please supply a valid email address!</div> : ''}
+            {notFilled ? <div className="contact__message">Please fill out all fields of the form</div> : ''}
         </div>
     );
 };

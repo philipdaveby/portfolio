@@ -9,14 +9,15 @@
         font-size: 0.7rem;
         padding-bottom: 0.5rem;
     }
-    p {
-        padding: 0.5rem;
-        text-align: justify;
-    }
-
+    
     .about__tech-header {
         padding: 0.5rem 0 0;
     }
+}
+
+.about__text {
+    padding: 0.5rem;
+    text-align: justify;
 }
 
 .about__tech {
@@ -47,7 +48,7 @@
         }
 
         .about__text {
-            font-size: 12px;
+            font-size: 14px;
             padding-bottom: 1rem;
         }
 
@@ -61,10 +62,6 @@
 
 @media screen and (min-width: 700px) {
     .about {
-
-        h1 {
-            font-size: 2rem;
-        }
         
         h2 {
             font-size: 18px;
