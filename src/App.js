@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
 import { Switch, Route } from 'react-router-dom';
+import './App.css';
 import Home from './components/Home/Home';
 import Nav from './components/Nav/Nav';
 import DesktopNav from './components/DesktopNav/DesktopNav';

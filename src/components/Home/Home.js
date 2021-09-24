@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 // import Navigation from '../Navigation/Navigation'
 // import Nav from '../Nav/Nav'
-import './home.scss'
 import { useLocation } from 'react-router'
+import ArrowKeysReact from 'arrow-keys-react';
+import './home.scss'
 
 import PopUp from '../PopUp/PopUp'
 import Projects from '../Projects/Projects'
@@ -13,6 +14,21 @@ const Home = () => {
     const [openPopUp, setOpenPopUp] = useState(false);
     const [currentProject, setCurrentProject] = useState(1);
     const { pathname } = useLocation();
+
+    ArrowKeysReact.config({
+        left: () => {
+          prevProject();
+        },
+        right: () => {
+          nextProject();
+        },
+        // up: () => {
+        //   console.log('up key detected.');
+        // },
+        // down: () => {
+        //   console.log('down key detected.');
+        // }
+      });
 
     const nextProject = () => {
         setOpenPopUp(false);
@@ -34,7 +50,7 @@ const Home = () => {
     }
 
     return (
-        <div className="home" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : 'lightgreen' }}>
+        <div {...ArrowKeysReact.events} tabIndex="1" className="home" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : 'lightgreen' }}>
             <p className="arrow-left" onClick={prevProject}>&lt;</p>
             <p className="arrow-right" onClick={nextProject}>&gt;</p>
             <div className="home__projects">
