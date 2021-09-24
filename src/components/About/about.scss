@@ -3,7 +3,7 @@
     font-size: 0.6rem;
     padding: 0 1rem 0;
     background-color: black;
-    overflow:hidden;
+    overflow: scroll;
 
     h2 {
         font-size: 0.7rem;
@@ -18,6 +18,7 @@
 .about__text {
     padding: 0.5rem;
     text-align: justify;
+    // font-size: 12px;
 }
 
 .about__tech {
@@ -41,6 +42,19 @@
 
 @media screen and (min-height: 600px) {
     .about {
+        .about__text {
+            font-size: 14px;
+        }
+        
+        .about__tech-icons {
+            max-height: 40px;
+            max-width: 40px;
+        }
+    }
+}
+
+@media screen and (min-height: 700px) {
+    .about {
 
         h2 {
             font-size: 16px;
@@ -52,10 +66,6 @@
             padding-bottom: 1rem;
         }
 
-        .about__tech-icons {
-            max-height: 40px;
-            max-width: 40px;
-        }
 
     }
 }
