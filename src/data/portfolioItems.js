@@ -41,7 +41,7 @@ const portfolioItems = [{
     gridArea: 'portfolio-item-2',
     id: 2,
     info: "Select the exercises you want to include in your workout, give it a name, get started! Reorder inside workouts using drag and drop. Workout app was initially a 'Hack day' project during the </salt>, where I developed an app from scratch in one day.",
-    techStack: [react, sass, netlify, mongoDB, express, node, docker, heroku]
+    techStack: [javascript, react, sass, netlify, mongoDB, express, node, docker, heroku]
 },
 {
     name: "Portfolio",
@@ -68,7 +68,7 @@ const portfolioItems = [{
     gridArea: 'portfolio-item-4',
     id: 4,
     info: "Philip's ToDo app let's you write done things and check them off once done, so you won't forget what to do. This application was built during the bootcamp purely as frontend.",
-    techStack: [react, sass, netlify]
+    techStack: [javascript, react, sass, netlify]
 }
 ];
 

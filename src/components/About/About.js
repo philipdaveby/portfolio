@@ -28,7 +28,7 @@ import figma from '../../images/logo/figma.png'
 const About = () => {
     return (
         <div className="about">
-            <h1>Philip Daveby</h1>
+            {/* <h1>Philip Daveby</h1> */}
             <h2>Fullstack Javascript Developer</h2>
             <p className="about__text">Former professional freelance musician in Stockholm. Driven by learning and passionate about frontend, tech & music. I love solving problems, leading teams and seeing the bigger picture.</p>
             <h2 className="about__tech-header">Frontend</h2>

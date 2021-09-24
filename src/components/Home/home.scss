@@ -4,6 +4,7 @@
     margin: 20vh 0;
     font-size: 4rem;
     font-weight: 400;
+    font-family: "Poppins";
     cursor: pointer;
 }
 .home {
@@ -13,20 +14,23 @@
     grid-template-columns: 0.2fr 1fr 0.2fr;
     grid-template-areas: 
     'arrow-left screenshot arrow-right';
-
 }
 
 .home__projects {
-    max-width: 600px;
-    margin: 0 auto;
+    width: 100%;
+    // max-width: 600px;
+    // margin: 0 auto;
     padding-top: 1rem;
     grid-area: screenshot;
-    // display: grid;
+    // display: flex;
+    // justify-content: center;
     // grid-template-columns: 0.2fr 1fr 0.2fr;
-    // grid-template-rows: 0.4fr 0.2fr 0.6fr;
-    // grid-template-areas: 
-    // '. screenshot .'
-    // 'arrow-left screenshot arrow-right'
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'pop-up';
+    // 'screenshot'
     // '. screenshot .';
 }
 

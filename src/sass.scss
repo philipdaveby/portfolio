@@ -1,9 +1,9 @@
-// @font-face{
-//     font-family: "disket-mono-regular-webfont";
-//     src: url("./fonts/Disket-Mono-Regular/disket-mono-regular-webfont.woff2"),
-//         url("./fonts/Disket-Mono-Regular/disket-mono-regular-webfont.woff")
-//         format("truetype");
-//   }
+@font-face{
+    font-family: "disket-mono-regular-webfont";
+    src: url("./fonts/Disket-Mono-Regular/disket-mono-regular-webfont.woff2"),
+        url("./fonts/Disket-Mono-Regular/disket-mono-regular-webfont.woff")
+        format("truetype");
+  }
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -12,13 +12,17 @@
     padding: 0;
     text-align: center;
     box-sizing: border-box;
-    font-family: "Poppins";
+    font-family: 'disket-mono-regular-webfont';
     font-weight: 600;
     color: white;
 }
 
 html, body, #root, .App {
     height: 100%;
+}
+
+p {
+    font-family: "Poppins";
 }
 
 a {

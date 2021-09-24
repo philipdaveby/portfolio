@@ -1,6 +1,13 @@
+// @font-face{
+//     font-family: "disket-mono-regular-webfont";
+//     src: url("./fonts/Disket-Mono-Regular/disket-mono-regular-webfont.woff2"),
+//         url("./fonts/Disket-Mono-Regular/disket-mono-regular-webfont.woff")
+//         format("truetype");
+//   }
+
 .header {
     grid-area: header;
-    padding-left: 8%;
+    padding: 2rem 0 1rem;
 }
 
 .header__signature {
@@ -10,12 +17,15 @@
 
 @media (min-width: 450px) {
     .header {
-        padding-left: 1%;
+        
+        h1 {
+            // font-size: 3rem;
+        }
     }
 }
 
-@media (min-height: 600px) {
-    .header {
-        padding-top: 2rem;
-    }
-}
+// @media (min-height: 600px) {
+//     .header {
+        
+//     }
+// }

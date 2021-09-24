@@ -1,5 +1,5 @@
 .projects {
-    grid-area: screenshot;
+    grid-area: pop-up;
 }
 
 .projects__screenshot {
@@ -20,6 +20,7 @@
     padding: 0 2rem;
     display: flex;
     justify-content: space-around;
+    // max-width: 200px;
 
     .projects__github {
         padding-bottom: 1px;
