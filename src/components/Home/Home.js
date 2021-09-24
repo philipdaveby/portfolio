@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react'
 // import Nav from '../Nav/Nav'
 import { useLocation } from 'react-router'
 import ArrowKeysReact from 'arrow-keys-react';
+import SwipeReact from 'swipe-react';
 import './home.scss'
 
 import PopUp from '../PopUp/PopUp'
@@ -27,14 +28,16 @@ const Home = () => {
         },
         right: () => {
           nextProject();
-        },
-        // up: () => {
-        //   console.log('up key detected.');
-        // },
-        // down: () => {
-        //   console.log('down key detected.');
-        // }
+        }
       });
+    SwipeReact.config({
+        left: () => {
+            prevProject();
+          },
+          right: () => {
+            nextProject();
+          }
+    });
 
     const nextProject = () => {
         setOpenPopUp(false);
@@ -56,7 +59,7 @@ const Home = () => {
     }
 
     return (
-        <div ref={arrowKeys} {...ArrowKeysReact.events} tabIndex="1" className="home" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : 'lightgreen' }}>
+        <div ref={arrowKeys} {...SwipeReact.events} {...ArrowKeysReact.events} tabIndex="1" className="home" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : 'lightgreen' }}>
         {/* {focus()} */}
             <p className="arrow-left" onClick={prevProject}>&lt;</p>
             <p className="arrow-right" onClick={nextProject}>&gt;</p>
