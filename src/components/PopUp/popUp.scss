@@ -7,7 +7,7 @@
     cursor: pointer;
 }
 .pop-up {
-    max-height: 50vh;
+    max-height: 48vh;
     max-width: 60vw;
     border-radius: 15px;
     margin: 0 auto;
@@ -30,13 +30,17 @@
     }
 
     .pop-up__img {
-        max-width: 70px;
+        max-width: 35px;
         max-height: 35px;
     }
     
     .pop-up__li {
         color: black;
         font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
     }
 
     .pop-up__close {
@@ -44,7 +48,7 @@
     }
 }
 
-@media (min-height: 600px) {
+@media (min-height: 850px) {
     .pop-up {
         max-height: 40vh;
     }
@@ -53,10 +57,15 @@
 @media (min-width: 600px) {
     .pop-up {
         max-height: 50vh;
-        max-width: 30vw;
+        max-width: 400px;
+
+        .pop-up__list {
+            width: 80%;
+            margin: 0 auto;
+        }
 
         .pop-up__text {
-            font-size: 18px;
+            font-size: 16px;
             padding-bottom: 3rem;
         }
     }

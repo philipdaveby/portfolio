@@ -18,9 +18,11 @@
 .projects__links {
     grid-area: links;
     padding: 0 2rem;
+
     display: flex;
     justify-content: space-around;
-    // max-width: 200px;
+    margin: 0 auto;
+    max-width: 300px;
 
     .projects__github {
         padding-bottom: 1px;
