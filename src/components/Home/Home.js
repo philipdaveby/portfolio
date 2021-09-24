@@ -35,9 +35,9 @@ const Home = () => {
 
     return (
         <div className="home" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : 'lightgreen' }}>
+            <p className="arrow-left" onClick={prevProject}>&lt;</p>
+            <p className="arrow-right" onClick={nextProject}>&gt;</p>
             <div className="home__projects">
-                <p className="arrow-left" onClick={prevProject}>&lt;</p>
-                <p className="arrow-right" onClick={nextProject}>&gt;</p>
                 {portfolioItems.map((project, index) => {
                     if (currentProject === project.id) {
                         return <Projects key={index} setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} project={project} />

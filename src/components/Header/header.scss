@@ -1,11 +1,17 @@
 .header {
     grid-area: header;
-    padding-left: 1rem;
+    padding-left: 8%;
 }
 
 .header__signature {
     margin-top: 1rem;
     max-height: 90px;
+}
+
+@media (min-width: 450px) {
+    .header {
+        padding-left: 1%;
+    }
 }
 
 @media (min-height: 600px) {
