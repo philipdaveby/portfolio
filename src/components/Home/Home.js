@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 // import Navigation from '../Navigation/Navigation'
 // import Nav from '../Nav/Nav'
 import { useLocation } from 'react-router'
@@ -14,6 +14,12 @@ const Home = () => {
     const [openPopUp, setOpenPopUp] = useState(false);
     const [currentProject, setCurrentProject] = useState(1);
     const { pathname } = useLocation();
+
+    const arrowKeys = useRef(null);
+
+    useEffect(() => {
+        arrowKeys.current.focus();
+    }, [])
 
     ArrowKeysReact.config({
         left: () => {
@@ -50,7 +56,8 @@ const Home = () => {
     }
 
     return (
-        <div {...ArrowKeysReact.events} tabIndex="1" className="home" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : 'lightgreen' }}>
+        <div ref={arrowKeys} {...ArrowKeysReact.events} tabIndex="1" className="home" style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : 'lightgreen' }}>
+        {/* {focus()} */}
             <p className="arrow-left" onClick={prevProject}>&lt;</p>
             <p className="arrow-right" onClick={nextProject}>&gt;</p>
             <div className="home__projects">
