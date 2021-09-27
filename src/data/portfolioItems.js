@@ -49,7 +49,7 @@ const portfolioItems = [{
         ],
     imageLink: portfolio,
     imageAlt: 'Portfolio screenshot',
-    webLink: 'https://hardcore-hoover-0417ae.netlify.app',
+    webLink: 'http://www.philipdaveby.tech',
     gitLink: 'https://github.com/philipdaveby/portfolio',
     gridArea: 'portfolio-item-3',
     id: 3,
