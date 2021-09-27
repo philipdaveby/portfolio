@@ -16,6 +16,16 @@
     'arrow-left screenshot arrow-right';
 }
 
+@keyframes black-pink {
+    0% {
+      background-color: black;
+    }
+    100% {
+        left: 0;
+      background-color: pink;
+    }
+  }
+
 .home__projects {
     width: 100%;
     padding-top: 1rem;

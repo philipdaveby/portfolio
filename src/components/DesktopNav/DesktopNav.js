@@ -1,15 +1,16 @@
 import React from 'react'
 import './desktopNav.scss'
-import { useLocation } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 
-const DesktopNav = () => {
+const DesktopNav = props => {
     const { pathname } = useLocation();
+    let history = useHistory();
 
     return (
-        <nav className="desktop-nav" style={{ backgroundColor: pathname === '/about' ? 'black' : 'pink'}}>
-            <a href="/" style={{ textDecoration: pathname === '/' ? 'underline' : null}}>HOME</a>
-            <a href="/about" style={{ textDecoration: pathname === '/about' ? 'underline' : null}}>ABOUT</a>
-            <a href="/contact" style={{ textDecoration: pathname === '/contact' ? 'underline' : null}}>CONTACT</a>
+        <nav className={props.setClass('desktop-nav')} style={{ backgroundColor: pathname === '/about' ? 'black' : 'pink'}}>
+            <div onClick={() => history.push('/')} style={{ textDecoration: pathname === '/' ? 'underline' : null}}>HOME</div>
+            <div onClick={() => history.push('/about')} style={{ textDecoration: pathname === '/about' ? 'underline' : null}}>ABOUT</div>
+            <div onClick={() => history.push('/contact')} style={{ textDecoration: pathname === '/contact' ? 'underline' : null}}>CONTACT</div>
         </nav>
     )
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
+import { useLastLocation } from 'react-router-last-location';
 import './App.css';
 import Home from './components/Home/Home';
 import Nav from './components/Nav/Nav';
@@ -12,6 +13,8 @@ import portfolioItems from './data/portfolioItems';
 const App = () => {
   
   const [isLoading, setIsLoading] = useState(true);
+  const lastLocation = useLastLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
     cacheImages(portfolioItems);
@@ -33,24 +36,37 @@ const App = () => {
     setIsLoading(false);
   }
 
+  const setClass = defaultClass => {
+      if (!lastLocation) {
+          return defaultClass
+      }
+      if (lastLocation.pathname === '/about' && pathname !== '/about') {
+          return `${defaultClass} black-pink`
+      }
+      if (lastLocation.pathname !== '/about' && pathname === '/about') {
+        return `${defaultClass} pink-black`
+      }
+      return defaultClass;
+  }
+
   return (
       <div className="App">
         {isLoading ? <div className="load-div"></div> :
         <div className="load-div">
-          <Header />
+          <Header setClass={setClass} />
           <Switch>
             <Route path="/about">
-              <About />
+              <About setClass={setClass} />
             </Route>
             <Route path="/contact">
-              <Contact />
+              <Contact setClass={setClass} />
             </Route>
             <Route path="/">
-              <Home />
+              <Home setClass={setClass} />
             </Route>
           </Switch>
-            <DesktopNav />
-            <Nav />
+            <DesktopNav setClass={setClass} />
+            <Nav setClass={setClass} />
           </div>
           }
       </div>

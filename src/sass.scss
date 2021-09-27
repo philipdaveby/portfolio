@@ -22,6 +22,14 @@ html, body, #root, .App {
     height: 100%;
 }
 
+.pink-black {
+    animation: pink-black 3s 1;
+}
+
+.black-pink {
+    animation: black-pink 3s 1;
+}
+
 p {
     font-family: "Poppins";
 }
