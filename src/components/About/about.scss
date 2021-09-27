@@ -31,13 +31,13 @@
 .about__tech-li {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    margin: 0.2rem;
+    margin: 0.15rem;
 }
 
 .about__tech-icons {
     margin: auto;
-    max-height: 30px;
-    max-width: 30px;
+    max-height: 29px;
+    max-width: 29px;
 }
 
 @media screen and (min-height: 600px) {
@@ -85,6 +85,7 @@
         
         .about__tech {
             max-width: 700px;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
             margin: 0 auto;
         }
 
