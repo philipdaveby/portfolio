@@ -14,7 +14,7 @@ const Nav = props => {
     }
 
     return (
-        <nav className={props.setClass('nav')} style={{ backgroundColor: pathname === '/about' ? 'black' : 'pink'}}>
+        <nav className={props.setClass('nav')} style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? '#D24F80' : '#FC7295'}}>
             <div className="nav__hamburger">
                 {clickedNav ? <div className="links" id="slide">
                     <div onClick={() => handleClick('/')} >HOME</div>

@@ -1,5 +1,7 @@
+@import '../../variables.scss';
+
 .contact {
-    background-color: pink;
+    background-color: $tertiary-color;
     grid-area: main;
 }
 

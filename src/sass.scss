@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 @font-face{
     font-family: "disket-mono-regular-webfont";
     src: url("./fonts/Disket-Mono-Regular/disket-mono-regular-webfont.woff2"),
@@ -23,12 +25,88 @@ html, body, #root, .App {
 }
 
 .pink-black {
-    animation: pink-black 3s 1;
+    animation: pink-black 2s 1;
 }
 
 .black-pink {
-    animation: black-pink 3s 1;
+    animation: black-pink 2s 1;
 }
+
+.black-yellow {
+    animation: black-yellow 2s 1;
+}
+
+.yellow-black {
+    animation: yellow-black 2s 1; 
+}
+
+.pink-yellow {
+    animation: pink-yellow 2s 1;
+}
+
+.yellow-pink {
+    animation: yellow-pink 2s 1;
+}
+
+@keyframes pink-black {
+    0% {
+      background-color: $primary-color;
+    }
+    100% {
+        left: 0;
+      background-color: $secondary-color;
+    }
+  }
+
+@keyframes black-pink {
+    0% {
+      background-color: $secondary-color;
+    }
+    100% {
+        left: 0;
+      background-color: $primary-color;
+    }
+  }
+
+  @keyframes yellow-pink {
+    0% {
+      background-color: $tertiary-color;
+    }
+    100% {
+        left: 0;
+      background-color: $primary-color;
+    }
+  }
+
+  @keyframes pink-yellow {
+    0% {
+      background-color: $primary-color;
+    }
+    100% {
+        left: 0;
+      background-color: $tertiary-color;
+    }
+  }
+
+  @keyframes black-yellow {
+    0% {
+      background-color: $secondary-color;
+    }
+    100% {
+        left: 0;
+      background-color: $tertiary-color;
+    }
+  }
+
+  @keyframes yellow-black {
+    0% {
+      background-color: $tertiary-color;
+    }
+    100% {
+        left: 0;
+      background-color: $secondary-color;
+    }
+  }
 
 p {
     font-family: "Poppins";

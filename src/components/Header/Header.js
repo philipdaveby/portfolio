@@ -8,7 +8,7 @@ const Header = props => {
     let history = useHistory();
 
     return (
-        <div className={props.setClass('header')} onClick={() => history.push('/')} style={{ backgroundColor: pathname === '/about' ? 'black' : 'pink'}}>
+        <div className={props.setClass('header')} onClick={() => history.push('/')} style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? '#D24F80' : '#FC7295'}}>
             <h1>Philip Daveby</h1>
         </div>
     )

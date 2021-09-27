@@ -19,13 +19,83 @@ html, body, #root, .App {
 }
 
 .pink-black {
-  animation: pink-black 3s 1;
+  animation: pink-black 2s 1;
 }
 
 .black-pink {
-  animation: black-pink 3s 1;
+  animation: black-pink 2s 1;
 }
 
+.black-yellow {
+  animation: black-yellow 2s 1;
+}
+
+.yellow-black {
+  animation: yellow-black 2s 1;
+}
+
+.pink-yellow {
+  animation: pink-yellow 2s 1;
+}
+
+.yellow-pink {
+  animation: yellow-pink 2s 1;
+}
+
+@keyframes pink-black {
+  0% {
+    background-color: pink;
+  }
+  100% {
+    left: 0;
+    background-color: #D24F80;
+  }
+}
+@keyframes black-pink {
+  0% {
+    background-color: #D24F80;
+  }
+  100% {
+    left: 0;
+    background-color: pink;
+  }
+}
+@keyframes yellow-pink {
+  0% {
+    background-color: #FC7295;
+  }
+  100% {
+    left: 0;
+    background-color: pink;
+  }
+}
+@keyframes pink-yellow {
+  0% {
+    background-color: pink;
+  }
+  100% {
+    left: 0;
+    background-color: #FC7295;
+  }
+}
+@keyframes black-yellow {
+  0% {
+    background-color: #D24F80;
+  }
+  100% {
+    left: 0;
+    background-color: #FC7295;
+  }
+}
+@keyframes yellow-black {
+  0% {
+    background-color: #FC7295;
+  }
+  100% {
+    left: 0;
+    background-color: #D24F80;
+  }
+}
 p {
   font-family: "Poppins";
 }

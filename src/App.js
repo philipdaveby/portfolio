@@ -40,11 +40,23 @@ const App = () => {
       if (!lastLocation) {
           return defaultClass
       }
-      if (lastLocation.pathname === '/about' && pathname !== '/about') {
+      if (pathname === '/' && lastLocation.pathname === '/about') {
           return `${defaultClass} black-pink`
       }
-      if (lastLocation.pathname !== '/about' && pathname === '/about') {
+      if (pathname === '/' && lastLocation.pathname === '/contact') {
+          return `${defaultClass} yellow-pink`
+      }
+      if (pathname === '/about' && lastLocation.pathname === '/') {
         return `${defaultClass} pink-black`
+      }
+      if (pathname === '/about' && lastLocation.pathname === '/contact') {
+        return `${defaultClass} yellow-black`
+      }
+      if (pathname === '/contact' && lastLocation.pathname === '/') {
+        return `${defaultClass} pink-yellow`
+      }
+      if (pathname === '/contact' && lastLocation.pathname === '/about') {
+        return `${defaultClass} black-yellow`
       }
       return defaultClass;
   }

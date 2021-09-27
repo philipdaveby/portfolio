@@ -1,8 +1,10 @@
+@import '../../variables.scss';
+
 .about {
     grid-area: main;
     font-size: 0.6rem;
     padding: 0 1rem 0;
-    background-color: black;
+    background-color: $secondary-color;
     overflow: scroll;
 
     h2 {
@@ -13,18 +15,7 @@
     .about__tech-header {
         padding: 0.5rem 0 0;
     }
-}
-
-@keyframes pink-black {
-    0% {
-      background-color: pink;
-    }
-    100% {
-        left: 0;
-      background-color: black;
-    }
-  }
-  
+} 
 
 .about__text {
     padding: 0.5rem;

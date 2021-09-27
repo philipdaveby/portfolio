@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
 @mixin arrow {
@@ -15,16 +17,6 @@
     grid-template-areas: 
     'arrow-left screenshot arrow-right';
 }
-
-@keyframes black-pink {
-    0% {
-      background-color: black;
-    }
-    100% {
-        left: 0;
-      background-color: pink;
-    }
-  }
 
 .home__projects {
     width: 100%;
