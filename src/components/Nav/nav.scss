@@ -1,5 +1,4 @@
 .nav {
-  animation: about 3s 1;
   grid-area: footer;
   padding-bottom: 0.5rem;
   display: flex;
@@ -19,9 +18,11 @@
 
 .links {
   margin-top: 0.4rem;
+  display: flex;
+  justify-content: center;
 }
 
-.links a {
+.links div {
   padding: 0 10px;
   font-size: 0.9rem;
   transition: 1s;
@@ -60,6 +61,5 @@
   @media screen and (min-width: 600px) {
     .nav {
       display: none;
-      background-color: pink;
     }
   }

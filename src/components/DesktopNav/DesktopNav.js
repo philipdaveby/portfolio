@@ -4,7 +4,7 @@ import { useLocation, useHistory } from 'react-router-dom';
 
 const DesktopNav = props => {
     const { pathname } = useLocation();
-    let history = useHistory();
+    const history = useHistory();
 
     return (
         <nav className={props.setClass('desktop-nav')} style={{ backgroundColor: pathname === '/about' ? 'black' : 'pink'}}>
