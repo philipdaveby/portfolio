@@ -25,9 +25,9 @@ import jest from '../../images/logo/jest.webp'
 import git from '../../images/logo/git.png'
 import figma from '../../images/logo/figma.png'
 
-const About = props => {
+const About = ({ setClass }) => {
     return (
-        <div className={props.setClass('about')}>
+        <div className={setClass('about')}>
             {/* <h1>Philip Daveby</h1> */}
             <h2>Fullstack Javascript Developer</h2>
             <p className="about__text">Former professional freelance musician in Stockholm. Driven by learning and passionate about frontend, tech & music. I love solving problems, leading teams and seeing the bigger picture.</p>

@@ -1,20 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import './nav.scss';
 import { useLocation, useHistory } from "react-router";
 
-const Nav = props => {
+const Nav = ({setClass, clickedNav, setClickedNav}) => {
 
-    const [clickedNav, setClickedNav] = useState(false);
     const { pathname } = useLocation();
     const history = useHistory();
-
+    
     const handleClick = path => {
         setClickedNav(false);
         history.push(path)
     }
+    
 
     return (
-        <nav className={props.setClass('nav')} style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? '#D24F80' : '#FC7295'}}>
+        <nav className={setClass('nav')} style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? '#D24F80' : '#FC7295'}}>
             <div className="nav__hamburger">
                 {clickedNav ? <div className="links" id="slide">
                     <div onClick={() => handleClick('/')} >HOME</div>

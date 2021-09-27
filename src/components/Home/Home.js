@@ -10,7 +10,7 @@ import PopUp from '../PopUp/PopUp'
 import Projects from '../Projects/Projects'
 import portfolioItems from "../../data/portfolioItems";
 
-const Home = props => {
+const Home = ({setClass}) => {
 
     const [openPopUp, setOpenPopUp] = useState(false);
     const [currentProject, setCurrentProject] = useState(1);
@@ -58,7 +58,7 @@ const Home = props => {
     }
 
     return (
-        <div ref={arrowKeys} {...SwipeReact.events} {...ArrowKeysReact.events} tabIndex="1" className={props.setClass('home')} style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : 'lightgreen' }}>
+        <div ref={arrowKeys} {...SwipeReact.events} {...ArrowKeysReact.events} tabIndex="1" className={setClass('home')} style={{ backgroundColor: pathname === '/' ? 'pink' : pathname === '/about' ? 'black' : 'lightgreen' }}>
             <p className="arrow-left" onClick={prevProject}>&lt;</p>
             <p className="arrow-right" onClick={nextProject}>&gt;</p>
             <div className="home__projects">

@@ -2,9 +2,9 @@ import React from 'react'
 import './contact.scss'
 import ContactForm from '../ContactForm/ContactForm'
 
-const Contact = props => {
+const Contact = ({setClass}) => {
     return (
-        <div className={props.setClass('contact')}>
+        <div className={setClass('contact')}>
             <h3 className="contact__text">Say hi! 👋</h3>
             <ContactForm />
         </div>

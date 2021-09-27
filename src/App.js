@@ -13,6 +13,7 @@ import portfolioItems from './data/portfolioItems';
 const App = () => {
   
   const [isLoading, setIsLoading] = useState(true);
+  const [clickedNav, setClickedNav] = useState(false);
   const lastLocation = useLastLocation();
   const { pathname } = useLocation();
 
@@ -65,7 +66,7 @@ const App = () => {
       <div className="App">
         {isLoading ? <div className="load-div"></div> :
         <div className="load-div">
-          <Header setClass={setClass} />
+          <Header setClickedNav={setClickedNav} setClass={setClass} />
           <Switch>
             <Route path="/about">
               <About setClass={setClass} />
@@ -78,7 +79,7 @@ const App = () => {
             </Route>
           </Switch>
             <DesktopNav setClass={setClass} />
-            <Nav setClass={setClass} />
+            <Nav setClickedNav={setClickedNav} clickedNav={clickedNav} setClass={setClass} />
           </div>
           }
       </div>

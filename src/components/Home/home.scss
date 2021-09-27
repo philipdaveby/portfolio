@@ -10,7 +10,7 @@
     cursor: pointer;
 }
 .home {
-    background: pink;
+    background: $primary-color;
     overflow: scroll;
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr;
