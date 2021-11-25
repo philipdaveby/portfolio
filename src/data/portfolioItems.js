@@ -1,7 +1,7 @@
 import eatsy from '../images/eatsy.png';
 import reminders from '../images/reminders.png';
 import workouts from '../images/workout.png';
-import todo from '../images/todo2.png';
+import uberclone from '../images/uberclone.png';
 import portfolio from '../images/portfolio.png';
 import react from '../images/logo/react.png'
 import express from '../images/logo/express.png'
@@ -12,6 +12,7 @@ import docker from '../images/logo/docker.png'
 import typescript from '../images/logo/typescript.png'
 import tailwind from '../images/logo/tailwind.png'
 import heroku from '../images/logo/heroku.png'
+import css from '../images/logo/css3.webp'
 import graphql from '../images/logo/graphql.png'
 import apollo from '../images/logo/apollo.png'
 import netlify from '../images/logo/netlify.webp'
@@ -20,6 +21,7 @@ import socket from '../images/logo/socket.png'
 import firebase from '../images/logo/firebase.png'
 import mongoDB from '../images/logo/mongodb.webp'
 import javascript from '../images/logo/javascript.webp'
+import redux from '../images/logo/redux.webp'
 
 const portfolioItems = [{
     name: 'Eatsy',
@@ -77,19 +79,31 @@ const portfolioItems = [{
     techStack: [javascript, react, sass, netlify]
 },
 {
-    name: "ToDo",
-    text: ['A todo application to help you remember your tasks and mark them as done',
-        'Built purely as a frontend application'
-        ],
-    imageLink: todo,
-    imageAlt: 'Todo app screenshot',
-    webLink: 'https://zen-morse-86e998.netlify.app',
-    gitLink: 'https://github.com/philipdaveby/todo',
+    name: "Uber Clone",
+    text: ['A frontend clone of the popular Uber app to showcase React Native'],
+    imageLink: uberclone,
+    imageAlt: 'Uber app screenshot',
+    webLink: 'https://github.com/philipdaveby/uber-clone',
+    gitLink: 'https://github.com/philipdaveby/uber-clone',
     gridArea: 'portfolio-item-5',
     id: 5,
-    info: "Philip's ToDo app let's you write done things and check them off once done, so you won't forget what to do. This application was built during the bootcamp purely as frontend.",
-    techStack: [javascript, react, sass, netlify]
+    info: 'A frontend clone of the popular Uber app to showcase React Native',
+    techStack: [javascript, react, redux, css, tailwind]
 }
+// {
+//     name: "ToDo",
+//     text: ['A todo application to help you remember your tasks and mark them as done',
+//         'Built purely as a frontend application'
+//         ],
+//     imageLink: todo,
+//     imageAlt: 'Todo app screenshot',
+//     webLink: 'https://zen-morse-86e998.netlify.app',
+//     gitLink: 'https://github.com/philipdaveby/todo',
+//     gridArea: 'portfolio-item-5',
+//     id: 5,
+//     info: "Philip's ToDo app let's you write done things and check them off once done, so you won't forget what to do. This application was built during the bootcamp purely as frontend.",
+//     techStack: [javascript, react, sass, netlify]
+// }
 ];
 
 export default portfolioItems;
