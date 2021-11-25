@@ -7,14 +7,22 @@
   justify-content: center;
   cursor: pointer;
 
-  div {
+  h3 {
       font-size: 1.5rem;
       padding: 0 0.5rem;
-    }
-  div:hover {
-  text-decoration: underline dotted;
   }
+  
 }
+.underlined {
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+h3:hover {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
 
 @media screen and (max-width: 599px) {
     .desktop-nav {

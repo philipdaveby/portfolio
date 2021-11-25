@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.about__tech-li {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin: 0.15rem;
+}
+
+.about__tech-icons {
+  margin: auto;
+  max-height: 29px;
+  max-width: 29px;
+}
+
+@media screen and (min-height: 600px) {
+  .about__tech-icons {
+    max-height: 40px;
+    max-width: 40px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .about__tech-icons {
+    max-height: 50px;
+    max-width: 50px;
+  }
+}

@@ -1,4 +1,5 @@
 import eatsy from '../images/eatsy.png';
+import reminders from '../images/reminders.png';
 import workouts from '../images/workout.png';
 import todo from '../images/todo2.png';
 import portfolio from '../images/portfolio.png';
@@ -8,10 +9,15 @@ import node from '../images/logo/node.png'
 import gatsby from '../images/logo/gatsby.png'
 import sass from '../images/logo/sass.png'
 import docker from '../images/logo/docker.png'
+import typescript from '../images/logo/typescript.png'
+import tailwind from '../images/logo/tailwind.png'
 import heroku from '../images/logo/heroku.png'
 import graphql from '../images/logo/graphql.png'
 import apollo from '../images/logo/apollo.png'
 import netlify from '../images/logo/netlify.webp'
+import jest from '../images/logo/jest.webp'
+import socket from '../images/logo/socket.png'
+import firebase from '../images/logo/firebase.png'
 import mongoDB from '../images/logo/mongodb.webp'
 import javascript from '../images/logo/javascript.webp'
 
@@ -30,6 +36,20 @@ const portfolioItems = [{
     techStack: [react, gatsby, sass, apollo, graphql, node, express, docker, heroku]
 },
 {
+    name: 'Reminders',
+    text: ['A simple way to remember everything you have to do and share it with anyone you like.',
+            'Built with Typescript, Socket, Firebase and MongoDB'
+        ],
+    imageLink: reminders,
+    imageAlt: 'Reminders app screenshot',
+    webLink: 'https://todoreminders.vercel.app/',
+    gitLink: 'https://github.com/philipdaveby/reminders',
+    gridArea: 'portfolio-item-2',
+    id: 2,
+    info: "A simple way to remember everything you have to do and share it with anyone you like. Built with Typescript, Socket, Firebase and MongoDB",
+    techStack: [typescript, react, tailwind, socket, node, express, docker, jest, mongoDB, firebase, heroku]
+},
+{
     name: 'Workouts',
     text: ['Workouts was initally created during a hackday at </salt>. ',
             'Create you own workouts, reorder them as you like and check them off'
@@ -38,8 +58,8 @@ const portfolioItems = [{
     imageAlt: 'Workouts screenshot',
     webLink: 'https://musing-mclean-d22dac.netlify.app',
     gitLink: 'https://github.com/philipdaveby/hack-day',
-    gridArea: 'portfolio-item-2',
-    id: 2,
+    gridArea: 'portfolio-item-3',
+    id: 3,
     info: "Select the exercises you want to include in your workout, give it a name, get started! Reorder inside workouts using drag and drop. Workout app was initially a 'Hack day' project during the </salt>, where I developed an app from scratch in one day.",
     techStack: [javascript, react, sass, netlify, mongoDB, express, node, docker, heroku]
 },
@@ -51,8 +71,8 @@ const portfolioItems = [{
     imageAlt: 'Portfolio screenshot',
     webLink: 'http://www.philipdaveby.tech',
     gitLink: 'https://github.com/philipdaveby/portfolio',
-    gridArea: 'portfolio-item-3',
-    id: 3,
+    gridArea: 'portfolio-item-4',
+    id: 4,
     info: "My portfolio showcases my latest projects and their tech stack. The goal was to give a clear presentation of each website and it's features.",
     techStack: [javascript, react, sass, netlify]
 },
@@ -65,8 +85,8 @@ const portfolioItems = [{
     imageAlt: 'Todo app screenshot',
     webLink: 'https://zen-morse-86e998.netlify.app',
     gitLink: 'https://github.com/philipdaveby/todo',
-    gridArea: 'portfolio-item-4',
-    id: 4,
+    gridArea: 'portfolio-item-5',
+    id: 5,
     info: "Philip's ToDo app let's you write done things and check them off once done, so you won't forget what to do. This application was built during the bootcamp purely as frontend.",
     techStack: [javascript, react, sass, netlify]
 }
