@@ -2,6 +2,7 @@ import eatsy from '../images/eatsy.png';
 import reminders from '../images/reminders.png';
 import workouts from '../images/workout.png';
 import uberclone from '../images/uberclone.png';
+import netflixclone from '../images/netflixclone.png';
 import portfolio from '../images/portfolio.png';
 import react from '../images/logo/react.png'
 import express from '../images/logo/express.png'
@@ -84,11 +85,23 @@ const portfolioItems = [{
     imageLink: uberclone,
     imageAlt: 'Uber app screenshot',
     webLink: 'https://github.com/philipdaveby/uber-clone',
-    gitLink: 'https://github.com/philipdaveby/uber-clone',
+    gitLink: '',
     gridArea: 'portfolio-item-5',
     id: 5,
     info: 'A frontend clone of the popular Uber app to showcase React Native',
     techStack: [javascript, react, redux, css, tailwind]
+},
+{
+    name: "Netflix Clone",
+    text: ['A frontend clone of the Netflix website to showcase Typescript and React'],
+    imageLink: netflixclone,
+    imageAlt: 'Netflix screenshot',
+    webLink: 'https://netflix-clone-8485b.web.app/',
+    gitLink: 'https://github.com/philipdaveby/netflix-clone',
+    gridArea: 'portfolio-item-6',
+    id: 6,
+    info: 'A frontend clone of the Netflix website to showcase Typescript and React',
+    techStack: [javascript, typescript, react, css]
 }
 // {
 //     name: "ToDo",
